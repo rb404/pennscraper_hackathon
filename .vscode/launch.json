@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Scrapy: Crawl",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/venv/Scripts/scrapy",  // Path to scrapy executable in your virtual environment
+            "args": [
+                "crawl",  // Command to start the crawl
+                "news_crawler"  // Spider name
+            ],
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"  // Ensure Python can find your modules
+            },
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
